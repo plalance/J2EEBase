@@ -18,4 +18,14 @@
 		<servlet-name>afficheClient</servlet-name>
 		<url-pattern>/afficherLeClient</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>afficherSamples</servlet-name>
+		<jsp-file>/pages/afficherSamples.jsp</jsp-file>
+	</servlet>
+	<!--mapping -->
+	<servlet-mapping>
+		<servlet-name>afficherSamples</servlet-name>
+		<url-pattern>/afficherSamples</url-pattern>
+	</servlet-mapping>
 </web-app>
