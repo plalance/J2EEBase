@@ -14,5 +14,13 @@
 	<jsp:useBean id="client" class="com.beans.Client" scope="request" />
 	/* Mappe les attributs du formulaire sur le bean Client : nom = attribut*/
 	<jsp:setProperty property="*" name="client"/>
+	
+	<h4>Client : </h4>
+	
+	id = <jsp:getProperty property="id" name="client"/><br/>
+	nom = <jsp:getProperty property="nom" name="client"/><br/>
+	prénom = <jsp:getProperty property="prenom" name="client"/><br/>
+	mail = <jsp:getProperty property="mail" name="client"/>
+	
 </body>
 </html>

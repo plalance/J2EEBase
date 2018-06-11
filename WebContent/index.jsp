@@ -10,7 +10,7 @@
 <h2>Il est : <%= new java.util.Date().toString() %></h2>
 <a href="Servlet01">Invoquer la servlet : Servlet01</a>
 
-<h3>Client</h3>
+<h3>Formulaire pour afficher un client (POST / JSP AfficheClient)</h3>
 <form action="afficherLeClient" method="post">
 <div><span>Identifiant :</span><span><input type="text"
 name="id" value="" /></span></div>
