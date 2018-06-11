@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<%@ include file="pages/render/head.jspf"%>
@@ -21,5 +25,19 @@ value="" /></span></div>
 <div><input type="submit" name="valider" value="Valider" />
 </div>
 </form>
+
+<h3>Exemple tag JSTL c</h3>
+
+<c:set var="maVariable" value="ma valeur avec JSTL" scope="page" />
+<c:out value="${maVariable}" /><br/>
+<c:if test="${1==1}">Une conditionnelle opérationnelle</c:if>
+<c:if test="${1==2}">Une conditionnelle non affichée</c:if><br/>
+<c:forEach begin="1" end="4" var="i">
+<c:out value="${i}"/><br/>
+</c:forEach>
+<br/>
+<%-- <c:import url="/message.txt" var="message"/>
+<c:out value="${message}"/> --%>
+
 </body>
 </html>
