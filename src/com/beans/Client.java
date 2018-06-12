@@ -1,19 +1,22 @@
 package com.beans;
 
-public class Client {
-	protected int id;
+public class Client implements java.io.Serializable{
+	
+	protected long id;
 	protected String nom;
 	protected String prenom;
 	protected String mail;
+	protected String login;
+	protected String password;
 	
 	public Client(){
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -40,5 +43,23 @@ public class Client {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	
+	
 	
 }
