@@ -1,4 +1,4 @@
 <ul>
 	<li><a href="Servlet01">Servlet 01</a></li>
-	<li><a href="/listeSamples">lister les samples</a></li>
+	<li><a href="afficherSamples">lister les samples</a></li>
 </ul>

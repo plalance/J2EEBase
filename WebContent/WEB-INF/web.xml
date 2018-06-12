@@ -4,28 +4,40 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<display-name>J2EEBase</display-name>
-
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>Authentification.jsp</welcome-file>
 	</welcome-file-list>
-
 	<servlet>
 		<servlet-name>afficheClient</servlet-name>
 		<jsp-file>/pages/afficheClient.jsp</jsp-file>
 	</servlet>
-	<!--mapping -->
 	<servlet-mapping>
 		<servlet-name>afficheClient</servlet-name>
 		<url-pattern>/afficherLeClient</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>afficherSamples</servlet-name>
 		<jsp-file>/pages/afficherSamples.jsp</jsp-file>
 	</servlet>
-	<!--mapping -->
 	<servlet-mapping>
 		<servlet-name>afficherSamples</servlet-name>
 		<url-pattern>/afficherSamples</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>erreurClient</servlet-name>
+		<jsp-file>/erreurClient.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>erreurClient</servlet-name>
+		<url-pattern>/erreurClient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>connecteClient</servlet-name>
+		<jsp-file>/connecteClient.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connecteClient</servlet-name>
+		<url-pattern>/connecteClient</url-pattern>
 	</servlet-mapping>
 </web-app>
